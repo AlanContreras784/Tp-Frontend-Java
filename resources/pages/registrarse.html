@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP ASESORAMIENTO EMPRESARIAL INTEGRAL</title>
+    <link rel="stylesheet" href="/resources/CSS/estilos.css">
+    <link rel="stylesheet" href="/resources/CSS/styleLogin.css">
+    <script src="/resources/JS/register.js"></script>
+</head>
+
+<body>
+    <!-- <div class="flecha_atras">
+        <a href="/index.html">
+            <img src="/resources/IMG/arrowreload_flecha_1318.png" alt="" style="width:50px ;">
+        </a>
+    </div> -->
+    <div class="contenedorLogin">
+        <form id="contenedorFormulario" name="fRegistro">
+            <h2>Registrarse</h2>
+
+            <!--Grupo Usuario-->
+            <div class="formulario__grupo">
+                <label for="username" class="formulario__label">Usuario: </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="username" id="username">
+                </div>
+            </div>
+
+            <!--Grupo Password-->
+            <div class="formulario__grupo">
+                <label for="password" class="formulario__label">Contraseña: </label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                </div>
+            </div>
+
+            <!--Grupo Confirmar Password-->
+            <div class="formulario__grupo">
+                <label for="password" class="formulario__label">Repite la Contraseña: </label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="confPassword" id="confPassword">
+                </div>
+            </div>
+
+
+
+            <!--Grupo Correo Electronico-->
+            <div class="formulario__grupo">
+                <label for="email" class="formulario__label">Correo Electronico: </label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" id="email"
+                    name="email">
+                </div>
+            </div> <br>
+
+            <div class="error" id="error-menssage"></div>
+
+            <!--Grupo Enviar-->
+            <div class="formulario__btn-enviar">
+                <button type="submit" class="formulario__btn">Registrar</button> <br>
+                <a href="/resources/pages/registrarse.html"> Olvido su Contraseña</a>
+            </div>
+        </form>
+    </div>
+    <p class="error-menssage" id="error-menssage"></p>
+</body>
+
+</html>

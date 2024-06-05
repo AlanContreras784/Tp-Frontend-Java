@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP ASESORAMIENTO EMPRESARIAL INTEGRAL</title>
+    <link rel="stylesheet" href="/resources/CSS/estilos.css">
+    <link rel="stylesheet" href="/resources/CSS/styleLogin.css">
+    <script src="/resources/JS/register.js"></script>
+</head>
+
+<body>
+    <div class="flecha_atras">
+        <a href="/index.html">
+            <img src="/resources/IMG/arrowreload_flecha_1318.png" alt="" style="width:50px ;">
+        </a>
+    </div>
+    <div class="contenedorLogin">
+        <form id="contenedorFormulario">
+            <h2>Login</h2>
+
+            <!--Grupo Usuario-->
+            <div class="formulario__grupo">
+                <label for="username" class="formulario__label">Usuario: </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="username" id="username">
+                </div>
+            </div>
+
+            <!--Grupo Password-->
+            <div class="formulario__grupo">
+                <label for="passwoord" class="formulario__label">Contraseña: </label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="passwoord" id="paswoord">
+                </div>
+            </div>
+
+            <!--Grupo Enviar-->
+            <div class="formulario__btn-enviar">
+                <button type="submit" class="formulario__btn" id="submit" onclick="volverInicio()">Iniciar
+                    Sesion</button><br>
+                <a href="/resources/pages/registrarse.html"> Registrarse</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

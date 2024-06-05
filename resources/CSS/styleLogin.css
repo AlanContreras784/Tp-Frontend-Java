@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.contenedorLogin{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+h2 {
+    text-align: center;
+}
+.flecha_atras{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+img {
+    justify-content: center;
+    align-items: center;
+} 

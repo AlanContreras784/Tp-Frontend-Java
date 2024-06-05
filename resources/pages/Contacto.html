@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/resources/CSS/estilos.css">
+    <title>TP ASESORAMIENTO EMPRESARIAL INTEGRAL</title>
+</head>
+
+
+<body>
+
+    <div class="contenedor">
+        <header id="idheader" class="header"></header>
+
+
+        <div class="divImagenForm"><img class="imagenFormulario" heigh
+                src="/resources/IMG/vista-superior-elementos-orientacion-profesional-jueces_23-2149443481.jpg" alt=""></div>
+
+        <div class="contenedorFormulario">
+
+            <form  class="formulario" name="fvalida" id="fvalida">
+
+                <!--fieldset para datos personales-->
+                <fieldset class="fieldsetFormDatosP">
+                    <legend> <b>Datos Personales:</b></legend>
+
+                    <!--Grupo Nombre-->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre">
+                        </div>
+                    </div>
+
+                    <!--Grupo Apellido-->
+                    <div class="formulario__grupo">
+                        <label for="Apellido" class="formulario__label">Apellidos: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="Apellido">
+                        </div>
+                    </div>
+
+                    <!--Grupo Correo Electronico-->
+                    <div class="formulario__grupo">
+                        <label for="email" class="formulario__label">Correo Electronico: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" id="email">
+                        </div>
+                    </div>
+
+                    <!--Grupo Telefono-->
+                    <div class="formulario__grupo">
+                        <label for="telefono" class="formulario__label">Telefono: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono">
+                        </div>
+                    </div>
+
+                    <!--Grupo Edad-->
+                    <div class="formulario__grupo">
+                        <label for="edad" class="formulario__label">Edad: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" minlength="0" maxlength="3" class="formulario__input" name="edad"
+                                id="edad">
+                        </div>
+                    </div>
+
+
+                    <!--Grupo Residencia-->
+                    <div class="formulario__grupo">
+                        <label for="residencia" class="formulario__label">Residencia: </label>
+                        <div class="formulario__grupo-input">
+                            <select class="formulario__input" name="residencia" id="residencia">
+                                <option value="0">Elegir</option>
+                                <option value="1">Ciudad de Buenos Aires</option>
+                                <option value="2">Gran Buenos Aires</option>
+                                <option value="3">Interior del País</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="fieldsetForm">
+                    <legend> <b>Interes sobre sector:</b></legend>
+
+                    <!--Grupo Inetreses-->
+                    <div class="formulario__grupo  ">
+                        <label for="so" class="formulario__label">Necesito consultar sobre el sector: <br>(Puede
+                            seleccionar mas de una Opción) </label>
+                        <input type="checkbox" value="1" class="formulario__checkbox" name="so"
+                            id="inteContable">Contable
+                        <input type="checkbox" value="1" class="formulario__checkbox" name="so"
+                            id="inteImpositivo">Impositivo
+                        <input type="checkbox" value="1" class="formulario__checkbox" name="so"
+                            id="inteJuridico">Juridico
+                        <input type="checkbox" value="1" class="formulario__checkbox" name="so"
+                            id="segInformarica">Seguridad Informatica
+
+                    </div>
+                    <!--Grupo Consultas-->
+                    <div class="formulario__grupo">
+                        <label class="formulario__label">Que considera importante al momento de su consulta?: <br>(Puede
+                            seleccionar solo una Opción)
+                        </label>
+                        <input type="radio" value="1" class="formulario__checkbox" name="rb" id="consultaPR">Pronta
+                        Respuesta.
+                        <input type="radio" value="2" class="formulario__checkbox" name="rb" id="consultaIP">Idoneidad
+                        del
+                        Profesional.
+                        <input type="radio" value="3" class="formulario__checkbox" name="rb" id="concertarE">Concertar
+                        una
+                        entrevista.
+                        <input type="radio" value="4" class="formulario__checkbox" name="rb" id="concertaarEM">Concertar
+                        una
+                        entrevista por Meet.
+                    </div>
+
+                </fieldset>
+
+
+                <!--Grupo Terminos y Condiciones-->
+                <div class="formulario__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los
+                        Terminos y
+                        Condiciones
+                    </label>
+                </div>
+
+
+                <div class="formulario__btn-enviar">
+                    <button type="submit" class="formulario__btn" id="submit" onclick="validarEnviar()">Enviar</button>
+
+
+                </div>
+            </form>
+
+            <div class="iframeFormulario">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.00665378573!2d-58.372868469743985!3d-34.61362191880968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9c2d70389%3A0xe7b5e9ee316678f!2sPuerto%20Madero%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697431977477!5m2!1ses-419!2sar"
+                    width="100%" height="300" style="border:0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer id="idfooter" class="pie-pagina"></footer>
+    </div>
+    <script src="/resources/JS/headerFooter.js"></script>
+    <script src="/resources/JS/script.js"></script>
+
+<div>
+    <link rel="stylesheet" href="/resources/CSS/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/CSS/whats2.css">
+
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+                <p> <img alt=""  src="/resources/IMG/secretary.png" width="50">Hola, ¿en que podemos ayudarle? </p>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" placeholder="Enviar mensaje..." >
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <script src="/resources/JS/script2.js"></script>
+ </div>
+
+</body>
+
+ 
+
+
+</html>
