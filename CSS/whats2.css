@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+
 /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
 @keyframes pulse {
   0% {
     transform: scale(1, 1);
   }
+
   50% {
     opacity: 0.3;
   }
+
   100% {
     transform: scale(1.45);
     opacity: 0;
   }
 }
+
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -31,6 +35,7 @@
   padding: 5px;
   margin: 0px;
 }
+
 @media (max-width: 360px) {
   .nav-bottom {
     width: 320px;
@@ -93,25 +98,30 @@
   box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
   animation: slideInRight .6s 0.0s both;
 }
-.popup-whatsapp > div {
+
+.popup-whatsapp>div {
   margin: 5px;
 }
+
 @media (max-width: 680px) {
   .popup-whatsapp p {
     font-size: 0.9em;
   }
 }
-.popup-whatsapp > .content-whatsapp.-top {
+
+.popup-whatsapp>.content-whatsapp.-top {
   display: flex;
   flex-direction: column;
 }
-.popup-whatsapp > .content-whatsapp.-top p {
+
+.popup-whatsapp>.content-whatsapp.-top p {
   color: #585858;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.0em;
 }
-.popup-whatsapp > .content-whatsapp.-bottom {
+
+.popup-whatsapp>.content-whatsapp.-bottom {
   display: flex;
   flex-direction: row;
 }
@@ -132,6 +142,7 @@
   -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
 }
+
 .closePopup:hover {
   background-color: #3d9e5a;
   transition: .3s;
@@ -153,6 +164,7 @@
   -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
 }
+
 .send-msPopup:hover {
   background-color: #f8f8f8;
   transition: .3s;
@@ -178,16 +190,19 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
+
 @media (max-width: 420px) {
   input.whats-input[type=text] {
     width: 225px;
   }
 }
+
 input.whats-input::placeholder {
   /* Most modern browsers support this now. */
   color: rgba(68, 68, 68, 0.705);
   opacity: 1;
 }
+
 input.whats-input[type=text]:focus {
   background-color: #f8f8f8;
   -webkit-transition: width 0.3s ease-in-out;
