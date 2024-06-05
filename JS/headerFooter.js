@@ -1,6 +1,6 @@
 let header = `<div class="divlogo">
 <div class="logo">
-    <img src="/resources/IMG/Logo-Manu.jpg" alt="Logo">
+    <img src="/IMG/Logo-Manu.jpg" alt="Logo">
 </div>
 <div class="divlogomarca">
     ASESORAMIENTO EMPRESARIAL INTEGRAL
@@ -10,15 +10,15 @@ let header = `<div class="divlogo">
 <nav class="navegacion" id="nav">
  <button class="cerrarMenu" id="cerrar"><i class="bi bi-x-circle-fill"></i></button>
 <ul class="menu">
-    <li><a href="/resources/pages/inicioSesion.html">Iniciar Sesion</a></li>
-    <li><a href="/resources/pages/Contacto.html">Contacto</a></li>
+    <li><a href="/pages/inicioSesion.html">Iniciar Sesion</a></li>
+    <li><a href="/pages/Contacto.html">Contacto</a></li>
     <li><a href="#">Servicios</a>
         <ul class="submenu">
             <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/resources/pages/nosotros.html">Nosotros</a></li>
-            <li><a href="/resources/pages/asesoramientocontable.html">Asesoramiento Contable-Impositivo</a></li>
-            <li><a href="/resources/pages/asesoramientojuridico.html">Asesoramiento Juridico-Previsional</a></li>
-            <li><a href="/resources/pages/seguridadhigiene.html">Seguridad e Higiene Del Trabajo</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/asesoramientocontable.html">Asesoramiento Contable-Impositivo</a></li>
+            <li><a href="/pages/asesoramientojuridico.html">Asesoramiento Juridico-Previsional</a></li>
+            <li><a href="/pages/seguridadhigiene.html">Seguridad e Higiene Del Trabajo</a></li>
         </ul>
     </li>
 </ul>
